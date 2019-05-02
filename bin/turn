@@ -4,10 +4,15 @@ require_relative '../lib/turn.rb'
 
 board = [" ", " ", " ", " ", " ", " ", " ", " ", " ", ]
 
+<<<<<<< HEAD
 display_board(board)
 turn(board)
 
 
+=======
+turn(board)
+
+>>>>>>> c9b8e05aa2dddc93ec6099c750f6fe37f32722f0
 #puts "Welcome to Tic Tac Toe!"
 #display_board(board)
 #index = input_to_index

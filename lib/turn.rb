@@ -1,6 +1,7 @@
 def turn(board)
   #display_board(board)
   puts "Please Enter 1-9"
+<<<<<<< HEAD
   index = input_to_index
   if valid_move?(board, index) == true
     move(board, index)
@@ -8,6 +9,16 @@ def turn(board)
     puts "Invalid move. Please Enter 1-9"
     turn(board)
   end
+=======
+  user_input = gets.strip
+  index = input_to_index(user_input)
+  if valid_move?(board, index) == true
+    move(board, index)
+  else
+    puts "Invalid move. Please Enter 1-9"
+  end
+  #turn(board)
+>>>>>>> c9b8e05aa2dddc93ec6099c750f6fe37f32722f0
 end
 
 def display_board(board)
@@ -44,7 +55,11 @@ def position_taken?(board, index)
 end
 
 def valid_move?(board, index)
+<<<<<<< HEAD
   if position_taken?(board, index) == false
+=======
+  if  position_taken?(board, index) == false
+>>>>>>> c9b8e05aa2dddc93ec6099c750f6fe37f32722f0
     return true
   elsif position_taken?(board, index) == true
     return false
